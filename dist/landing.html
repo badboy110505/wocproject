@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home|TracknShopHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/assets/public-LilhpTVR.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index.esm-Gw7Hybki.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-dd468b12-V4AwCyTK.js">
+    <link rel="stylesheet" crossorigin href="/assets/input-B-bMkZ1B.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-UYDO7NSO.css">
+  </head>
+  <body>
+    
+    <nav class="bg-blue-300 text-black flex justify-between">
+      <span class="text-2xl flex items-center mx-3 font-serif"
+        >TracknShopHub</span
+      >
+      <ul class=" space-x-6 px-8 py-4 flex  justify-end">
+        <li class="cursor-pointer hover:underline font-mono text-xl hover:text-white">Home</li>
+        <a href="about.html"
+          ><li class="cursor-pointer hover:underline font-mono text-xl hover:text-white">
+            About
+          </li></a
+        >
+        <li class="cursor-pointer hover:underline font-mono text-xl hover:text-white" onclick="toggleMenu()">
+          Contact Us
+        </li>
+        <li class="cursor-pointer hover:underline font-mono text-xl hover:text-white">
+          <a href="tracking.html" target="_blank">Track</a>
+        </li>
+        <!-- <li class="cursor-pointer mahito"><i class="fa-solid fa-circle-user fa-xl" onclick="toggleMenu()"></i></li> -->
+        <button class="logout font-mono text-xl border border-black rounded-lg bg-blue-500 text-black px-2 hover:bg-blue-400 hover:text-white">
+          <i class="fa-solid fa-right-from-bracket mx-2"></i>Logout
+        </button>
+      </ul>
+
+       <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu bg-slate-100">
+          <div class="uer-info">
+           
+            <h2>CONTACT: +91 9873575904</h2>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            
+            <p class="font-medium">EMAIL: tracknshophub@gmail.com</p>
+            
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+
+    <main class="bg-slate-300 flex justify-around" style="height: 46vw">
+      <section class="main">
+        <div>
+          <div class="text-5xl font-semibold font-sans">
+            Welcome to TracknShopHub
+          </div>
+          <br>
+          <p class="py-3 w-1/3 mx-2 text-lg font-serif">
+            At TracknShopHub, we redefine your online shopping journey by
+            seamlessly integrating cutting-edge tracking solutions with an
+            expansive array of products. Our platform is designed to elevate
+            your shopping experience, ensuring convenience, transparency, and
+            reliability from click to delivery.
+          </p>
+        </div>
+      </section>
+    </main>
+    <br />
+
+    <div class="card">
+      <h2 class="text-xl font-serif">Suppliers</h2>
+      <hr />
+      <div class="cards">
+        <div class="card-item hover:drop-shadow-xl hover:block">
+          <a href="adidas.html" target="_blank"
+            ><img src="data:image/png;base64,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" alt="" class="h-40 w-40"
+          /></a>
+          <div class="lines">
+            <a href="adidas.html" target="_blank"
+              ><p class="text-center my-1">Adidas</p></a
+            >
+            <a href="adidas.html" target="_blank"
+              ><p class="text-center my-1">Contact:9544795745</p></a
+            >
+          </div>
+        </div>
+
+        <div class="card-item hover:drop-shadow-xl hover:block">
+          <a href="realme.html" target="_blank"
+            ><img src="/assets/realme-d9mJSNjh.webp" alt="" class="h-40 w-40"
+          /></a>
+          <div class="lines">
+            <a href="realme.html" target="_blank">
+              <p class="text-center my-1">Realme</p></a
+            >
+            <a href="realme.html" target="_blank">
+              <p class="text-center my-1">Contact:9544795745</p></a
+            >
+          </div>
+        </div>
+        <div class="card-item hover:drop-shadow-xl hover:block">
+          <a href="nike.html" target="_blank">
+            <img src="data:image/png;base64,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" alt="" class="h-40 w-48"
+          /></a>
+          <div class="lines">
+            <a href="nike.html" target="_blank"
+              ><p class="text-center my-1">Nike</p></a
+            >
+            <a href="nike.html" target="_blank"
+              ><p class="text-center my-1">Contact:9544795745</p></a
+            >
+          </div>
+        </div>
+        <div class="card-item hover:drop-shadow-xl hover:block">
+          <a href="mi.html" target="_blank"
+            ><img src="/assets/xiaomi--oSeyPKs.webp" alt="" class="h-40 w-40"
+          /></a>
+          <div class="lines">
+            <a href="mi.html" target="_blank"
+              ><p class="text-center my-1">Xiaomi</p></a
+            >
+            <a href="mi.html" target="_blank"
+              ><p class="text-center my-1">Contact:9544795745</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <footer class="juhu mt-10">
+      <p>
+        &copy; 2024 TrackingIt. All rights reserved. |
+        <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+      </p>
+      <p>Designed with ❤️ by TrackingIt</p>
+    </footer>
+     <script>
+  let subMenu = document.getElementById('subMenu');
+
+  function toggleMenu() {
+    subMenu.classList.toggle("open-menu")
+  }
+</script> 
+    
+  </body>
+</html>
